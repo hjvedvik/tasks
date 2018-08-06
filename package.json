@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "@hjvedvik/tasks",
   "description": "Synchronized tasks for the terminal",
   "author": "Hans-Jørgen Vedvik <hjvedvik@gmail.com>",
