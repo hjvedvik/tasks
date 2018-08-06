@@ -1,0 +1,42 @@
+{
+  "version": "0.0.1",
+  "name": "@hjvedvik/tasks",
+  "description": "Synchronized tasks for the terminal",
+  "author": "Hans-Jørgen Vedvik <hjvedvik@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjvedvik/tasks.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix \"lib/**/*.js\""
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "figures": "^2.0.0",
+    "hirestime": "^3.2.1",
+    "log-update": "^2.3.0",
+    "p-map": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-plugin-node": "^7.0.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/hjvedvik/tasks/issues"
+  },
+  "homepage": "https://github.com/hjvedvik/tasks#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "task",
+    "list",
+    "progress",
+    "terminal"
+  ],
+  "license": "MIT"
+}
