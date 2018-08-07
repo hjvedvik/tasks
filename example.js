@@ -3,16 +3,17 @@ const Tasks = require('.')
 const list = new Tasks([
   {
     title: 'Simple task',
-    task: () => heavyTask()
+    task: () => heavyTask(10)
   },
   {
-    title: 'Allways skip this task',
+    title: 'Skip this task',
     skip: () => true,
     task: () => {}
   },
   {
-    title: 'Progress bar',
+    title: 'Show a progress bar',
     task: (_, task) => {
+      task.setProgress(0, 5)
       for (let i = 0; i <= 5; i++) {
         heavyTask(5)
         task.setProgress(i, 5)
@@ -20,7 +21,7 @@ const list = new Tasks([
     }
   },
   {
-    title: 'Status and summary',
+    title: 'Show status and summary',
     task: (_, task) => {
       for (let i = 1; i < 5; i++) {
         task.setStatus(`I'm now working with ${i} of 5`)
@@ -30,29 +31,29 @@ const list = new Tasks([
     }
   },
   {
-    title: 'Subtasks',
+    title: 'Do some more work',
+    task: (_, task) => {
+      heavyTask(3)
+      task.fail('This is the reason for failing')
+    }
+  },
+  {
+    title: 'Run sub tasks',
     task: () => new Tasks([
       {
-        title: 'Subtask can also have progress bar',
+        title: 'Can also show a progress bar',
         task: (_, task) => {
-          const length = 100000000
+          const length = 10000000
           for (let i = 0; i <= length; i++) {
             task.setProgress(i, length)
           }
         }
       },
       {
-        title: 'Another subtask',
-        task: () => heavyTask()
+        title: 'Another sub task',
+        task: () => heavyTask(2)
       }
     ])
-  },
-  {
-    title: 'Failing task',
-    task: (_, task) => {
-      heavyTask()
-      task.fail('This task failed')
-    }
   }
 ])
 
