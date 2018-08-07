@@ -1,5 +1,6 @@
 # @hjvedvik/tasks
-> Synchronized tasks for the terminal
+
+> This package share many similarities with [listr](https://github.com/SamVerschueren/listr), but is more suited for synchronous code.
 
 ### Install
 
