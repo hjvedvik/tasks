@@ -2,7 +2,7 @@
 
 > This package share many similarities with [listr](https://github.com/SamVerschueren/listr), but is more suited for synchronous code.
 
-<img src="art/terminal.gif">
+<img src="https://raw.githubusercontent.com/hjvedvik/tasks/master/art/terminal.gif">
 
 ### Install
 
