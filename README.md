@@ -2,6 +2,8 @@
 
 > This package share many similarities with [listr](https://github.com/SamVerschueren/listr), but is more suited for synchronous code.
 
+<img src="art/terminal.gif">
+
 ### Install
 
 ```bash
