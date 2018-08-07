@@ -2,7 +2,9 @@
 
 > This package shares many similarities with [listr](https://github.com/SamVerschueren/listr), but is more suited for synchronous code.
 
-<img src="https://raw.githubusercontent.com/hjvedvik/tasks/master/art/terminal.gif">
+<p align="center">
+  <img width="600" src="https://raw.githubusercontent.com/hjvedvik/tasks/master/art/terminal.gif">
+</p>
 
 ### Install
 
@@ -27,6 +29,7 @@ const tasks = new Tasks([
   },
   {
     title: 'Sub tasks',
+    skip: () => true, // true, false, string
     task: () => new Tasks([
       {
         title: 'Another task',
