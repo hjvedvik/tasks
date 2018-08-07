@@ -1,7 +1,7 @@
 {
   "version": "0.0.2",
   "name": "@hjvedvik/tasks",
-  "description": "Synchronized tasks for the terminal",
+  "description": "Terminal task list",
   "author": "Hans-Jørgen Vedvik <hjvedvik@gmail.com>",
   "repository": {
     "type": "git",
