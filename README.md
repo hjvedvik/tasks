@@ -45,3 +45,9 @@ tasks.run({
   // context
 })
 ```
+
+### Roadmap for v1.0
+
+- [x] Render in TTY and non-TTY environments
+- [ ] Determine a stable API
+- [ ] Create tests
