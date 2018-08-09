@@ -60,6 +60,10 @@ const list = new Tasks([
 ;(async () => {
   try {
     await list.run()
+
+    if (process.env.SVG_PREVIEW) {
+      await heavyTask(20)
+    }
   } catch (e) {
     console.log(e)
   }

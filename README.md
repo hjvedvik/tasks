@@ -2,17 +2,19 @@
 
 > This package shares many similarities with [listr](https://github.com/SamVerschueren/listr), but is more suited for synchronous code.
 
-<p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/hjvedvik/tasks/master/art/terminal.gif">
-</p>
+<pre>
+  <p align="center">
+    <img width="450" src="https://raw.githubusercontent.com/hjvedvik/tasks/master/art/terminal.svg">
+  </p>
+</pre>
 
-### Install
+## Install
 
 ```sh
 npm install @hjvedvik/tasks
 ```
 
-### Usage
+## Usage
 
 ```js
 const Tasks = require('@hjvedvik/tasks')
@@ -46,7 +48,7 @@ tasks.run({
 })
 ```
 
-### Roadmap for v1.0
+## Roadmap for v1.0
 
 - [x] Render in TTY and non-TTY environments
 - [ ] Determine a stable API
