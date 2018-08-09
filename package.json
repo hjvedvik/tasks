@@ -9,6 +9,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "example": "node example.js",
     "lint": "eslint --fix \"lib/**/*.js\"",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
