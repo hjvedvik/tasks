@@ -57,7 +57,13 @@ const list = new Tasks([
   }
 ])
 
-list.run()
+;(async () => {
+  try {
+    await list.run()
+  } catch (e) {
+    console.log(e)
+  }
+})()
 
 function heavyTask (l = 1) {
   for (let i = 0; i < l * 100000000; i++) {}
