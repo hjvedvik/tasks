@@ -4,7 +4,7 @@
 
 <pre>
   <p align="center">
-    <img width="450" src="https://raw.githubusercontent.com/hjvedvik/tasks/master/art/terminal.svg">
+    <img width="450" src="https://cdn.rawgit.com/hjvedvik/tasks/8305521/art/terminal.svg">
   </p>
 </pre>
 
